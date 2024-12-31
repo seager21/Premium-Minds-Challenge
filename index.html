@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizador</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"><img src="assets/LOGO-WDR.png" alt="WebDev"> </div>
+    </div>
+    <div class="container">
+        <!-- WebDev Bar -->
+        <aside class="sidebar">         
+            <nav class="menu">
+                <ul>
+                    <li>Lorem Ipsum</li>
+                    <li class="active">Utilizador</li>
+                    <li>Quantum solum</li>
+                    <li>Marcus Tremer</li>
+                </ul>
+            </nav>
+            <footer class="sidebar-footer">
+                <a class="link link-accent" href="https://www.premium-minds.com"><p>2019&copy; Premium-minds.com</p></a>
+            </footer>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <h1>Utilizador</h1>
+
+            <!-- User Type -->
+            <section class="user-type">
+                <h2>Tipo de utilizador</h2>
+                <form class="insider">
+                    <label><input type="checkbox" class ="checkbox checkbox-primary"> Project Manager</label>
+                    <label><input type="checkbox" checked class ="checkbox checkbox-primary"> Developer</label>
+                    <label><input type="checkbox" checked class ="checkbox checkbox-primary"> Architect</label>
+                </form>
+            </section>
+
+            <!-- Contactos -->
+            <section class="contact">
+                <h2>Contacto</h2>
+                <div class="contact-info">
+                    <div class="field">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" class="input w-full max-w-xs" placeholder="pm@premium-minds.com" onclick="clearValue(this)">
+                    </div>
+                    <div class="field">
+                        <label for="password">Palavra-passe</label>
+                        <input type="password" id="password" class="input w-full max-w-xs" placeholder="********" onclick="clearValue(this)">
+                    </div>
+                    <div class="field">
+                        <label for="phone">Telefone</label>
+                        <input type="text" id="phone" class="input w-full max-w-xs" placeholder="+351" onclick="clearValue(this)">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cancelar e Guardar -->
+            <div class="buttons">
+            <button class="cancel" onclick="my_modal_2.showModal()">Cancelar</button>
+                <dialog id="my_modal_2" class="modal">
+                    <div class="modal-box">
+                      <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                      </form>
+                      <h3 class="text-lg font-bold">Cancelado!</h3>
+                      <p class="py-4">Cancelado. Pressione ESC ou no botão X para sair.</p>
+                    </div>
+                  </dialog>
+
+            <button class="save" onclick="my_modal_3.showModal()">Guardar</button>
+                <dialog id="my_modal_3" class="modal">
+                    <div class="modal-box">
+                      <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                      </form>
+                      <h3 class="text-lg font-bold">Guardado!</h3>
+                      <p class="py-4">Informações guardadas com sucesso.</p>
+                    </div>
+                  </dialog>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/tailwind.config.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    width: 100%;
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #eeecec;
+    background: #eeecec;
+
+    
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #2c3e50;
+    color: #eeecec;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.sidebar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 1em;
+}
+
+.menu ul li {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.menu ul li.active {
+    background: #34495e;
+    border-radius: 5px;
+}
+
+.menu ul li:hover {
+    background: #34495e;
+    border-radius: 5px;
+}
+
+.sidebar-footer {
+    background: #1d2f42;
+    text-align: center;
+    font-size: 0.8em;
+    margin:0%;
+    padding:0%;
+}
+
+/* Main Content */
+.main {
+    width: 80%;
+    padding: 2em;
+    background: #eeecec;
+}
+
+.main h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5em;
+}
+
+/* User Type Section */
+.user-type {
+    margin-bottom: 2em;
+}
+
+.user-type h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.user-type label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+/* Contact Section */
+.contact {
+    margin-bottom: 2em;
+}
+
+.contact h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.contact-info {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 4%;
+}
+
+.insider {
+    background-color: #ffffff;
+}
+
+.field {
+    flex: 1;
+    min-width: 200px;
+}
+
+.field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.field input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f4f4f4;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+}
+
+.buttons .cancel {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 0.7em 1.5em;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons .cancel:hover {
+    background: #f4f4f4;
+}
+
+.buttons .save {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    width: 200px;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons .save:hover {
+    background: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex: none;
+    }
+
+    .main {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
