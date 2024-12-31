@@ -1164,7 +1164,7 @@ html {
   border-top-left-radius: var(--rounded-box, 1rem);
   border-top-right-radius: var(--rounded-box, 1rem);
   --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+  background-color:#ffffff;
   padding: 1.5rem;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1172,7 +1172,7 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 200ms;
-  box-shadow: rgba(243, 241, 241, 0.25) 0px 25px 50px -12px;
+  box-shadow: rgba(187, 172, 172, 0.25) 0px 25px 50px -12px;
   overflow-y: auto;
   overscroll-behavior: contain;
 }
